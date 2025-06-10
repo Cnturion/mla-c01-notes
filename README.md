@@ -8,10 +8,10 @@ This repository contains notes for the AWS Certified Machine Learning Engineer -
 
 <b>Types of Data</b>
 Structured - Data that is roganized in a defined manner or schema, typically found in relational databases.
-    * Easy to query
-    * Organized in rows and columns
-    * Has a consistent structure
-    * Example: SQL, CSV, Excel spreadsheets.
+- Easy to query
+- Organized in rows and columns
+- Has a consistent structure
+- Example: SQL, CSV, Excel spreadsheets.
 
 Unstructured Data - Data that does not have a predefined structured.
     * Not easy querable.
