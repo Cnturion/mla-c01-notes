@@ -2,9 +2,9 @@
 This repository contains notes for the AWS Certified Machine Learning Engineer - Associate Course MLA-C01.
 
 <h1>Domains</h1>
-* <b>Domain 1:</b> Data Preparation for Machine Learning (ML) (28%)
+<h2>Domain 1:</h2> Data Preparation for Machine Learning (ML) (28%)
 
-<h2> Section 1: Data Ingestion and Storage</h2>
+<h3> Section 1: Data Ingestion and Storage</h3>
 
 <b>Types of Data</b>
 Structured - Data that is roganized in a defined manner or schema, typically found in relational databases.
