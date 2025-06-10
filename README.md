@@ -90,3 +90,5 @@ Transform - Convert extracted data into a format suitable for the target data wa
 Load - Move transformed data into the target data warehouse or another data repository. Ensure data mantains its integrity during the loading phase.
 
 This process must be automated in some reliable way. <b>AWS Glue</b> is a serverless data integration service that allows you to discover, prepare, and load data for various analytics, machine learning, and application development needs.
+
+Test
