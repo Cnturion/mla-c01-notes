@@ -6,7 +6,7 @@ This repository contains notes for the AWS Certified Machine Learning Engineer -
 
 <h3> Section 1: Data Ingestion and Storage</h3>
 
-<b>Types of Data</b>
+<h4>Types of Data</h4>
 Structured - Data that is roganized in a defined manner or schema, typically found in relational databases.
 - Easy to query
 - Organized in rows and columns
@@ -22,7 +22,7 @@ Semi-structured Data - Data that is not organzied as structured data but has som
 - XML and JSON files.
 - Log files.
 
-<b> Properties of Data </b>
+<h4> Properties of Data </h4>
 
 Volume - Amount of data or size of data organizations are dealing with at any given time.
 
@@ -35,7 +35,7 @@ Velocity - Refers to the speed at which a enw data is generated, collected, and 
     
 Variety - Refers to the type of data.
 
-<b>Data Warehouses</b>
+<h4>Data Warehouses</h4>
 
 A centralized repository optimized for analysis where data from different sources is stored in a structured format. 
 
@@ -47,7 +47,7 @@ A centralized repository optimized for analysis where data from different source
 - More expensive.
 - Example: Amazon Redshift. 
 
-<b>Data Lake</b>
+<h4>Data Lake</h4>
 
 A storage repository that holds large amounts of raw data in its native format. 
 
@@ -57,7 +57,7 @@ A storage repository that holds large amounts of raw data in its native format.
 - Cost effective storage solution.
 - Example: Amazon S3.
 
-<b>Data Lakehouse</b>
+<h4>Data Lakehouse</h4>
 
 A hyrbrid data architecture that <u>combines the best features of data lakes and data warehouses</u>, aiming to provide the performance, reliability, and capabiliies of a data warehouse while maintaining the flexibility, scale, and low cost storage of data lakes.
 
@@ -67,14 +67,14 @@ A hyrbrid data architecture that <u>combines the best features of data lakes and
 - Typically built on top of cloud or distributed architectures. 
 - Examples: AWS Lake Formation (with S3 and Redshift Spectrum).
 
-<b>Data Mesh</b>
+<h4>Data Mesh</h4>
 
 Data Mesh is a data architecture approach where data is owned and managed by the teams that use it, not a centralized IT department.
 
 - It's more about governance and organization.
 - aka "Domain-based data management"
 
-<b>ETL Pipelines</b>
+<h4>ETL Pipelines</h4>
 
 ETL is a process used to move data from source systems and into a data warehouse. 
 
@@ -89,4 +89,4 @@ Transform - Convert extracted data into a format suitable for the target data wa
 
 Load - Move transformed data into the target data warehouse or another data repository. Ensure data mantains its integrity during the loading phase.
 
-This pricess
+This process must be automated in some reliable way. <b>AWS Glue</b> is a serverless data integration service that allows you to discover, prepare, and load data for various analytics, machine learning, and application development needs.
