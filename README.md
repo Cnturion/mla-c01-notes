@@ -112,3 +112,99 @@ Types of Get or read objects
     - Can be used to speed up downloads. 
 
 <h5>S3 Encryption</h5>
+
+Four methods of object encryption:
+
+- <b>Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)</b>
+    - enabled by default. 
+    - key managed by AWS
+    - Encryption type AES-256.
+- <b>Server-Side Encryption with KMS key stored in AWS KMS (SSE-KMS)</b>
+    - leverages AWS KMS to manage encryption keys.
+- <b>Server-Side Encryption with Customer-Provided Keys (SSE-C)</b>
+    - customer manages their own encryption keys. 
+    - amazazon does not store the customer encryption key.
+    - HTTPS must be used.
+- <b>Server-Side Encryption - Client Side Encryption</b>
+    - clients must encrypt data themselves before sending to Amazon S3.
+    - clients must decrypt data themselves when retrieving from Amazon S3.
+    - customer manages encryption keys and cycle. it's their keys. 
+
+<h5>S3 Access Points</h5>
+
+<h4>Elastic Block Storage (EBS) Volumes</h4>
+
+- Netwrok drive that can be attached to instances while they run.
+- Can only be mounted to 1 instance at a time.
+- Bound to a specific AZ.
+- "Network USB Stick"
+- Uses the netowkr to communicate the instance, which means there may be latency.
+- Has a "delete on termination" option. Deletes the EBS when an instance is terminated. Disabled by default.
+
+<h4>EBS Elastic Volumes</h4>
+
+- You don't have to detach a volume or restart your instance to change it.
+- Just go to action / modify volume from the console.
+- Volume size can be increased but not decreased.
+- Supports changing volume tupes  such as gp2 to gp3, specify desired IOPS. 
+
+<h4>Elastic File System (EFS)</h4>
+
+- Managed NFS that can be mounted on many EC2s.
+- It's multi-AZ.'
+- Highly available, scalable, expensive.
+- Use cases: content management, web serving, data sharing, Wordpress.
+- Uses NFSv4.1 protocol.
+- Uses SG to control access to EFS.
+- Compatible with Linux AMIs, not windows. 
+- Supports KMS encryption/ 
+- Scalable. billed by Gbs used. 
+
+<h4>FSx</h4>
+
+- Allows you to launch third party high-performance file systems on AWS as a fully managed service.
+
+<h5>Amazon Fsx for Windows (File Server)</h5>
+
+- Support SMB protocol & Windows NTFS.
+- Integrates with Windows AD.
+- Can be mounted on Linux EC2s.
+- Can be accessed from on-prem via VPC or Direct connect. 
+
+<h5>Amazon FSx for Lustre</h5>
+
+- Lustre is a type of parallel distributed file system, for large-scale computing.
+- Used for machine learning, HPC, video processing, financial modeling, etc..
+- Scales up to 100 GB/s, millions of IOPS, sub-ms latencies.
+- seamless integration with S3. can read s3 as a file system through FSx. 
+- Can be accessed from on-prem via VPC or Direct connect.
+
+<h5>FSx Deployment Options</h5>
+
+<b>Scratch File System</b>
+
+- Temporary storage.
+- Data is not replicated (does not persist if file server fails).
+- Used for short-term processing, optimizes costs.
+
+<b>Persistent file System</b>
+
+- Long term storage
+- Data is replicated within same AZ.
+- Replace failed files within minutes.
+- Usage: long terma processing, sensitive data.
+
+<h5>Amazon FSx for NetApp ONTAP</h5>
+
+- File system compatible with NFS, SMB, iSCSI protocol.
+- Move workloads running on ONTAP or NAS to AWS.
+- Works with many OSs (Linux, macOS, Windows, VMWare Cloud, ECS, EKS, etc).
+- Storage scales up and down automatically. 
+- supports point-in-time instantaneous cloning- helpful for testing. 
+
+<h5>Amazon FSx for OpenZFS</h5>
+
+- Move workloads running on ZFS to AWS.
+- supports point-in-time instantaneous cloning- helpful for testing. 
+
+<h4>Amazon Kinesus Data Streams</h4>
