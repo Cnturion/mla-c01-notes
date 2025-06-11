@@ -91,4 +91,24 @@ Load - Move transformed data into the target data warehouse or another data repo
 
 This process must be automated in some reliable way. <b>AWS Glue</b> is a serverless data integration service that allows you to discover, prepare, and load data for various analytics, machine learning, and application development needs.
 
-Test
+<h4>Amazon S3</h4>
+
+Types of PutObjects events
+
+- <b>Multi-Part upload:</b>
+    - recommended for files > 100MB and Required for files over 5 GB.
+    - Can help parallelize uploads (speed up transfers).
+
+- <b>S3 Transfer Acceleration</b>
+    - Increase transfer speed by transfering files to an AWS edge location which will forward the data to the S3 bucket in the target region.
+    - Compatible with multi-part upload. 
+    - File is publicly uploeaded to the edge location. From Edge Location to S3 uses private AWS network.
+
+Types of Get or read objects
+
+- <b>S3 Byte-Range Fetches</b>
+    - Parallelize GETs by requesting specific byte ranges.
+    - Better resilience in case of failures.
+    - Can be used to speed up downloads. 
+
+<h5>S3 Encryption</h5>
