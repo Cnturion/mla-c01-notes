@@ -208,3 +208,10 @@ Four methods of object encryption:
 - supports point-in-time instantaneous cloning- helpful for testing. 
 
 <h4>Amazon Kinesus Data Streams</h4>
+
+- Collects and stores streaming data in real-time.
+- real-time data = click streams, IoT devices, Metrics & logs from servers, etc.
+- Uses producers. This can be application that push data from point a to Amazon Kinesis Data Streams. 
+- Data is retained between up to 365.
+- Data can't be deleted from Kinesis -- until it expires.
+- Supports at-rest KMS encryption, in flight HTTPS encryption. 
