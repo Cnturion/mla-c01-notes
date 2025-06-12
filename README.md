@@ -135,6 +135,10 @@ Four methods of object encryption:
 
 <h5>S3 Access Points</h5>
 
+![image alt](https://github.com/Cnturion/mla-c01-notes/blob/main/Images/s3-access-point.png?raw=true)
+
+![image alt](https://github.com/Cnturion/mla-c01-notes/blob/main/Images/s3-access-point-2.png?raw=true)
+
 <h4>Elastic Block Storage (EBS) Volumes</h4>
 
 - Netwrok drive that can be attached to instances while they run.
@@ -220,6 +224,8 @@ Four methods of object encryption:
 - Supports at-rest KMS encryption, in flight HTTPS encryption. 
 - <b> 1 MB message size limit.</b>
 
+![image alt](https://github.com/Cnturion/mla-c01-notes/blob/main/Images/amazon-kinesis-data-streams.png?raw=true)
+
 <h4>Amazon Data Firehose</h4>
 
 - A service used to send data from sources to target destinations.
@@ -228,6 +234,10 @@ Four methods of object encryption:
 - Fully managed service.
 - Nearl-real-time service with buffering capability based on size / time.
 - Support data from CSV, JSON, parquet, Raw Text, binary data.
+
+![image alt](https://github.com/Cnturion/mla-c01-notes/blob/main/Images/data-firehose.png?raw=true)
+
+![image alt](https://github.com/Cnturion/mla-c01-notes/blob/main/Images/kinesis-data-stream-vs-data-firehose.png?raw=true)
 
 <h4>Amazon Managed Streaming for Apache Kafka (Amazon KMS)</h4>
 
@@ -262,3 +272,5 @@ Can be configured ar MSK Connect connectors to S3, Redshift, Opensearch, etc...
 - Has several integration points with AWS.
 
 <b>EMR Cluster</b> is a collection of EC2 instances. Each instance is called a "node", and each node has a role within the cluster which is called a "node type".
+
+![image alt](https://github.com/Cnturion/mla-c01-notes/blob/main/Images/EMR-cluster.png?raw=true)
