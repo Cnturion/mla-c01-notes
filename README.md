@@ -6,6 +6,7 @@ This repository contains notes for the AWS Certified Machine Learning Engineer -
 
 <h4>Types of Data</h4>
 Structured - Data that is roganized in a defined manner or schema, typically found in relational databases.
+
 - Easy to query
 - Organized in rows and columns
 - Has a consistent structure
@@ -108,6 +109,10 @@ Types of Get or read objects
     - Parallelize GETs by requesting specific byte ranges.
     - Better resilience in case of failures.
     - Can be used to speed up downloads. 
+
+<b>Storage Classes Comparison</b>
+
+![image alt](https://github.com/Cnturion/mla-c01-notes/blob/67880fe7e4a05f0a039f0e95a9b258ce7f2d9495/Images/S3StorageClasses.png)
 
 <h5>S3 Encryption</h5>
 
@@ -248,3 +253,12 @@ Can be configured ar MSK Connect connectors to S3, Redshift, Opensearch, etc...
 
 
 <h2>Domain 2: Data Transformation, Integrity, and Feature Engineering</h2> 
+
+<h4> What is EMR?</h4>
+
+- Elastic MapReduce- manages hadoop framework on EC2 instances.
+- Includes Spark, HBase, Presto, Flink, Hive & more.
+- EMR Notebooks
+- Has several integration points with AWS.
+
+<b>EMR Cluster</b> is a collection of EC2 instances. Each instance is called a "node", and each node has a role within the cluster which is called a "node type".
