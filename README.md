@@ -2,9 +2,7 @@
 This repository contains notes for the AWS Certified Machine Learning Engineer - Associate Course MLA-C01.
 
 <h1>Domains</h1>
-<h2>Domain 1:</h2> Data Preparation for Machine Learning (ML) (28%)
-
-<h3> Section 1: Data Ingestion and Storage</h3>
+<h2>Domain 1: Data Preparation for Machine Learning (ML)</h2>
 
 <h4>Types of Data</h4>
 Structured - Data that is roganized in a defined manner or schema, typically found in relational databases.
@@ -207,7 +205,7 @@ Four methods of object encryption:
 - Move workloads running on ZFS to AWS.
 - supports point-in-time instantaneous cloning- helpful for testing. 
 
-<h4>Amazon Kinesus Data Streams</h4>
+<h4>Amazon Kinesis Data Streams</h4>
 
 - Collects and stores streaming data in real-time.
 - real-time data = click streams, IoT devices, Metrics & logs from servers, etc.
@@ -215,3 +213,38 @@ Four methods of object encryption:
 - Data is retained between up to 365.
 - Data can't be deleted from Kinesis -- until it expires.
 - Supports at-rest KMS encryption, in flight HTTPS encryption. 
+- <b> 1 MB message size limit.</b>
+
+<h4>Amazon Data Firehose</h4>
+
+- A service used to send data from sources to target destinations.
+- Gets data from applications, clients, SDKs, Kinesis Agents, Kinesis data streams, Amazon cloudwatch logs and events, AWS IoTs, etc. 
+- For data transformation, it can use lambda functions (ex convert CSV to JSON).
+- Fully managed service.
+- Nearl-real-time service with buffering capability based on size / time.
+- Support data from CSV, JSON, parquet, Raw Text, binary data.
+
+<h4>Amazon Managed Streaming for Apache Kafka (Amazon KMS)</h4>
+
+- MSK is a fully managed service for Apache Kafka on AWS.
+    - allows to create, update, delete clusters.
+    - MSK creates and manages kafka brokers nodes and zookeper nodes.
+    - Deploy the MSK cluster in VPC, multi-AZ (up to 3 AZs)
+- Custom configurations can be created for clusters.
+- alternative to Kinesis.
+- Supports TLS between brokers. Can be disabled.
+- CloudWatch Metrics monitoring:
+    - Basic monitoring
+    - Enhanced monitoring
+    - Topic-level monitoring
+- <b> 1 MB message size by default, can be configured to higher.</b>
+
+<h5>MSK Features</h5>
+
+<b>MSK Connect</b> is a framework to take data from Kafka and move it somewhere else and vice versa. It is a managed service that provides managed workers on AWS with auto-scaling capabilities.
+Can be configured ar MSK Connect connectors to S3, Redshift, Opensearch, etc...
+
+<b>MSK Serverless</b> Run Apache kafka on MSK without managing the capacity. Fully managed service.
+
+
+<h2>Domain 2: Data Transformation, Integrity, and Feature Engineering</h2> 
