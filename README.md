@@ -274,3 +274,30 @@ Can be configured ar MSK Connect connectors to S3, Redshift, Opensearch, etc...
 <b>EMR Cluster</b> is a collection of EC2 instances. Each instance is called a "node", and each node has a role within the cluster which is called a "node type".
 
 ![image alt](https://github.com/Cnturion/mla-c01-notes/blob/main/Images/EMR-cluster.png?raw=true)
+
+<b>EMR Serverless</b>
+
+- automatic capacity provisioning.
+- manages underlying capacity; but worker sizes can be specified if needed.
+
+<h3>What is Feature Engineering?</h3>
+
+The process of creating, transforming, or selecting input variables (features) to improve the performance of ML models.
+
+Examples of features can be timestamps, names, heigh, weight, address, etc. Some features are relevant and some aren't. 
+
+<h3> SageMaker AI </h3>
+
+- Generally used for ML but can also do GenAI.
+- SageMaker is built to handle the entire machine learning workflow. ( deploy model, fetch, clean and prepare data, and train and evaluate a model).
+
+<h4>SageMaker AI Domains </h4>
+
+- A domain is the primary organizational unit for managing resources, users, and projects within a SageMaker environment.
+- It acts as a central point for configuring access, managing users, and setting up shared spaces for collaboration. 
+- Domains contain user profiles, volumesn, apps, config (policy, VPC, etc).
+
+<h4>SageMaker AI Ground Truth</h4>
+
+- A service that helps data scientists and machine learning practitioners create highly accurate training datasets.
+- Provides human labelers (public, private, or vendor) or automated labeling using machine learning models trained on human-labeled data
