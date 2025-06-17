@@ -315,4 +315,5 @@ Examples of features can be timestamps, names, heigh, weight, address, etc. Some
 - Prepares data for ML.
 - Imports, visualizes and transforms data.
 
+![image alt](https://github.com/Cnturion/mla-c01-notes/blob/main/Images/data-wrangler-sources.png?raw=true)
 
