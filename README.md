@@ -317,3 +317,13 @@ Examples of features can be timestamps, names, heigh, weight, address, etc. Some
 
 ![image alt](https://github.com/Cnturion/mla-c01-notes/blob/main/Images/data-wrangler-sources.png?raw=true)
 
+<h4>SageMaker Clarify</h4>
+
+- helps identify potential bias during data preparation without writing code
+- The following topic describes the analysis results that SageMaker Clarify generates:
+  - Partial Dpendence Plots (PDPs): Shows dependence of predicted target respionse on a set of input features. Plots can show you how feature values influence the prediction.
+  - Shapley Values: shapley values are the algorithm used to determine the contribution of each feature toward a model's predictions. Measures the impact of dropping individual features.
+    - Asymmetric Shapley Values- for time series data.
+
+
+
