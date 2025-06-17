@@ -301,3 +301,18 @@ Examples of features can be timestamps, names, heigh, weight, address, etc. Some
 
 - A service that helps data scientists and machine learning practitioners create highly accurate training datasets.
 - Provides human labelers (public, private, or vendor) or automated labeling using machine learning models trained on human-labeled data
+
+<b>Ground Turth Plus</b> is a turnkey solution where a team from AWS will manage the workflows and team of labelers. 
+
+<h4>SageMaker Mechanical Turk</h4>
+
+- Crowdsourcing marketplace to perform simple human tasks. Example humans tagging hundreds of images, data collection, business processing, etc.
+- Integrates with Amazon A21, SageMaker Ground Truth, etc.
+
+<h4>SageMaker Data Wrangler</h4>
+
+- An ETL pipeline in SageMaker studio.
+- Prepares data for ML.
+- Imports, visualizes and transforms data.
+
+
