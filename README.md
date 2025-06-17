@@ -323,7 +323,34 @@ Examples of features can be timestamps, names, heigh, weight, address, etc. Some
 - The following topic describes the analysis results that SageMaker Clarify generates:
   - Partial Dpendence Plots (PDPs): Shows dependence of predicted target respionse on a set of input features. Plots can show you how feature values influence the prediction.
   - Shapley Values: shapley values are the algorithm used to determine the contribution of each feature toward a model's predictions. Measures the impact of dropping individual features.
-    - Asymmetric Shapley Values- for time series data.
+    - Asymmetric Shapley Values- for time series data. https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-processing-job-analysis-results.html#clarify-processing-job-analysis-results-shap
+   
+<h4>SageMaker Feature Store</h4>
 
+- A fully managed, purpose-built repository to store, share, and manage features for machine learning (ML) models.
+- Features are inputs to ML models used during training and inference. For example, in an application that recommends a music playlist, features could include song ratings, listening duration, and listener demographics.
+- Everytrhing is encrypted at rest and automatically.
+- Fine-grained access control with IAM.
 
+<h4>SageMaker Canvas</h4>
 
+- No-code machine learning for business analysts.
+- uploads csv data, select a column to predict, build it, and make predictions. 
+
+<h3>AWS Glue</h3>
+
+- AWS Glue is a serverless data integration service that makes it easy for analytics users to discover, prepare, move, and integrate data from multiple sources.
+- Fully managed.
+- Used as a central metadata repository for DataLake, RDS, Redshift, most other SQL dtabases.
+- AWS Glue does custom ETL jobs (uses Apache Spark under the hood).
+- <b> Glue crawler</b> scans data in S3, creates schema.
+  - Can run periodically.
+- <b>Glue Data Brew</b>
+  - A visual data preparation tool (UI for pre=processing large data sets).
+  - inputs from s3, data warehouse and outputs to s3.
+  - May create datasets with custom SQL from redshift and snowflake.
+  - <b>Security</b>
+      - can integrate with KMS, customer master keys only.
+      - SSL in transit
+      - IAM can restrict who can do what.
+      - CloudWatch and CloudTrail
