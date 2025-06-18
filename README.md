@@ -290,6 +290,8 @@ Examples of features can be timestamps, names, heigh, weight, address, etc. Some
 
 - Generally used for ML but can also do GenAI.
 - SageMaker is built to handle the entire machine learning workflow. ( deploy model, fetch, clean and prepare data, and train and evaluate a model).
+- By default, SageMaker training and deployed inference containers are internet-enabled.
+- To prevent the training and inference containers from having access to the internet, you must enable network isolation.
 
 <h4>SageMaker AI Domains </h4>
 
@@ -351,6 +353,15 @@ Examples of features can be timestamps, names, heigh, weight, address, etc. Some
   - May create datasets with custom SQL from redshift and snowflake.
   - <b>Security</b>
       - can integrate with KMS, customer master keys only.
-      - SSL in transit
+      - SSL in transit.
       - IAM can restrict who can do what.
-      - CloudWatch and CloudTrail
+      - CloudWatch and CloudTrail.
+
+
+<h3>Amazon Athena</h3>
+
+- Serverless interactive queries of S3 data.
+- Supports CSV, TSV, JSCON, ORC, Parquet, Avro.
+- Supports structured, unstructured, or semi-structured data.
+- Examples: ad-hoc queries of web logs, staging data before loading to redshift, analyze CloudTrail logs / CloudFront / VPC / ELB etc logs in S3.
+- Integrates with Jupyter, Zeppelin, RStudions notebooks.
